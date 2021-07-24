@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fde27c5fce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index1.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+        $(function () {
+            $('#ordered').click(function () {
+                alert('Successfully Ordered! You will recieve your order in sometime.');
+                $('#mymodal').modal('hide');
+            });
+        });
+    </script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container-fluid ml-0">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#f4dcc3;">
+                    <a href="" class="navbar-brand">
+                        <img src="https://www.logodesign.net/logo/cupcake-with-fox-tail-5537ld.png" width="100px"
+                            height="100px" alt="">
+                    </a>
+                    <button class="navbar-toggler ">
+                        <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#myNav"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNav">
+                        <ul class="navbar-nav mr-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item mx-2"><a href="" class="nav-link active">Home</a></li>
+                            <li class="nav-item mx-2"><a href="#aboutus" class="nav-link">About Us</a></li>
+                            <li class="nav-item mx-2"><a href="#gallery" class="nav-link">Gallery</a></li>
+                            <li class="nav-item mx-2"><a href="#services" class="nav-link">Services</a></li>
+                            <li class="nav-item mx-2"><a href="#order" class="nav-link">Contact Us</a></li>
+                        </ul>
+                        <form action="" class="form-inline">
+                            <input type="search" class="form-control" placeholder="search">
+                            <button class="btn btn-dark">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12">
+                <h3 class="welcome bg-dark text-white px-3">Welcome to my delicious Bakery...</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card-deck  bg-dark mt-1">
+                    <div class="card bg-danger">
+                        <img src="https://birthdaycake24.com/uploads/worigin/2019/05/31/chocolate-birthday-cake-with-candle-with-name-min5cf0ce0fdeff0_f6f1c8979d50992a7bb996d4ceda54f5.jpg"
+                            height="350px" class="card-img-top w-100" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>YUMMY...</h4>
+                            </div>
+                            <div class="card-text">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="https://5.imimg.com/data5/SW/KE/OF/SELLER-3106386/whatsapp-image-2020-06-09-at-14-56-26-500x500.jpeg"
+                                            height="250px" class="w-100" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="https://www.cakedayphotoframes.com/blog/wp-content/uploads/2020/06/Happy-Birthday-Dharmesh-cake-with-name-image-editor.jpg"
+                                            height="250px" class="w-100" alt="">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img src="https://image.freepik.com/free-photo/delicious-birthday-cake-with-happy-birthday-tag_34142-644.jpg"
+                                            class="w-100" height="250px" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="aboutus">
+        <div class="box-1">
+            <div class="row">
+                <div class="col-7">
+                    <div id="first">
+                        <h4>Cake</h4>
+                        <p>
+                            Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually
+                            baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide
+                            range
+                            of preparations that can be simple or elaborate, and that share features with other desserts
+                            such as pastries, meringues, custards, and pies.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="image1">
+                        <img src="https://mobile-cuisine.com/wp-content/uploads/2014/11/cake-fun-facts-e1453902531427.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="row">
+                <div class="col-3">
+                    <div id="image2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/375px-2ChocolateChipCookies.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div id="second">
+                        <h4>Cookie</h4>
+                        <p>
+                            A cookie is a baked or cooked food that is typically small, flat and sweet. It usually
+                            contains
+                            flour,
+                            sugar or butter. It may include other ingredients such as raisins,
+                            chocolate chips, etc.Biscuit or cookie include sandwich biscuits, such as
+                            custard creams, Jammie Dodgers and Oreos, with marshmallow and sometimes
+                            dipped in chocolate.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="row">
+                <div class="col-7">
+                    <div id="first">
+                        <h4>Beverages</h4>
+                        <p>
+                            Iced coffee is a coffee beverage served cold. It may be prepared either by brewing coffee in
+                            the
+                            normal way and then serving it over ice or in cold milk, or by brewing the coffee cold. In
+                            hot
+                            brewing, sweeteners and flavoring may be added before cooling, as they dissolve faster.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="image1">
+                        <img src="https://mytastycurry.com/wp-content/uploads/2020/04/Cafe-style-cold-coffee-with-icecream.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="row">
+                <div class="col-3">
+                    <div id="image2">
+                        <img src="https://toriavey.com/images/2011/06/Doughnuts-740x555.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div id="second">
+                        <h4>Doughnut</h4>
+                        <p>
+                            A doughnut or donut is a type of leavened fried dough. It is popular in many countries and
+                            is
+                            prepared in various forms as a sweet snack that can be homemade or purchased in bakeries,
+                            supermarkets, food stalls, and franchised specialty vendors.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container Gallery p-2 mt-4" id="gallery">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="text-danger mt-2">My Gallery</h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4 " style="border:2px solid white;">
+                <div class="images">
+
+                    <img src="https://www.bakemag.com/ext/resources/images/2019/9/DessertGallery3.jpg?1567710389" alt=""
+                        class="img-fluid imd-thumbnail rounded mt-2" style="border: 4px solid whitesmoke;">
+                    <h2 class="text-center mt-2 text-light">Pastry</h2>
+                </div>
+            </div>
+            <div class="col-md-4" style="border:2px solid white;">
+                <div class="images">
+                    <img src="https://www.alessibakery.com/wp-content/uploads/2018/04/Matt-Sierra-Cross-Creek-Ranch-Wedding-Reception-0026.jpg"
+                        alt="" class="img-fluid imd-thumbnail rounded mt-2" style="border: 4px solid whitesmoke;">
+                    <h2 class="text-center mt-2 text-light">Wedding Cake</h2>
+                </div>
+            </div>
+            <div class="col-md-4" style="border:2px solid white;">
+                <div class="images">
+                    <img src="https://images.adsttc.com/media/images/5007/394e/28ba/0d41/4800/171e/large_jpg/stringio.jpg?1414028096"
+                        alt="" class="img-fluid imd-thumbnail rounded mt-2" style="border: 4px solid whitesmoke;">
+                    <h2 class="text-center mt-2 text-light">Our Bakery</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark" id="services">
+        <div class="services">
+            <div class="row justify-content-center mt-2">
+                <div class="col-12 text-light text-center mt-2">
+                    <h3>Our Services</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-6 text-center">
+                    <p class="text-light">
+                        We are a certified home kitchen in Quincy California.I hope you have some great memories of
+                        homemade
+                        baked goods, where the scent of fresh-baked bread or chocolate chip cookies came from a kitchen
+                        with
+                        people who loved and cared about you.
+                        I hope that you feel that way with every order you receive from Ram’s Bakery.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-2">
+                    <img src="C:\Users\hi\new python\OneDrive\Documents\my_projects\my_bakery\home-delivery-logo.jpg"
+                        alt="" class="img-fluid">
+                    <h5 class="text-center text-secondary">Home Delivery</h5>
+                    <p class="text-light text-center">
+                        Delivery slots permitting, a home food drop is less risky than a trip to a supermarket as you
+                        will avoid other shoppers.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img src="C:\Users\hi\new python\OneDrive\Documents\my_projects\my_bakery\clients.jpg" alt=""
+                        class="img-fluid">
+                    <h5 class="text-center text-secondary">Our Clients</h5>
+                    <p class="text-light text-center">
+                        A client review is a potential stage of the translation process whereby an internal native
+                        speaker on the client side reviews the completed output by the translation provider.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img src="C:\Users\hi\new python\OneDrive\Documents\my_projects\my_bakery\growth.jpg" alt=""
+                        class="img-fluid">
+                    <h5 class="text-center text-secondary">Growth of clients</h5>
+                    <p class="text-light text-center">
+                        We have increased our network of services so rapidly in past few years. We also
+                        have positive reports given by our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="order">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h5>Book your order now</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <button class="btn btn-primary " data-toggle="modal" data-target="#mymodal">Order Now</button>
+                <div class="modal fade" id="mymodal" data-backdrop="static" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title">Book your order</div>
+                                <button class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group mt-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">First Name</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="input-group mt-3">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Last Name</span>
+                                                </div>
+                                            </div>
+                                            <div class="multi-select mt-3">
+                                                <div class="selectBox" onclick="showCheckboxes()">
+                                                    <select name="" id="" style="width: 100%;">
+                                                        <option value="">
+                                                            Menu
+                                                        </option>
+                                                    </select>
+                                                    <div class="overSelect"></div>
+                                                </div>
+                                                <div id="checkboxes">
+                                                    <label for="one">
+                                                        <input type="checkbox" id="one">chocolate cake
+                                                    </label>
+                                                    <label for="two">
+                                                        <input type="checkbox" id="two">Pastries
+                                                    </label>
+                                                    <label for="three">
+                                                        <input type="checkbox" id="three">Cool-drinks
+                                                    </label>
+                                                    <label for="four">
+                                                        <input type="checkbox" id="four">chocolate burger
+                                                    </label>
+                                                    <label for="five">
+                                                        <input type="checkbox" id="five">Wedding cake
+                                                    </label>
+                                                    <label for="five">
+                                                        <input type="checkbox" id="five">Wedding cake
+                                                    </label>
+                                                    <label for="seven">
+                                                        <input type="checkbox" id="seven">Pineapple cake
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mt-3">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Enter your mail-id">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Email-id
+                                                        <i class="fas fa-envelope ml-1"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mt-3">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Enter your phone number">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Phone no.
+                                                        <i class="fas fa-phone ml-1"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mt-3">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Enter your address">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Address
+                                                        <i class="fas fa-location-arrow ml-1"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <label for="">Message</label>
+                                                <textarea name="" class="form-control"
+                                                    placeholder="Type Message(if any)"></textarea>
+                                            </div>
+                                            <button class="btn btn-primary">Pay here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary" id="ordered">Confirm Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-distributed mt-3 bg-secondary" >
+        <div class="footer-left">
+           <h3> Ram's Bakery</h3>
+           <p class="footer-company-name ml-2 mt-3">Ram's bakery &copy; 2021</p>
+        </div>
+        <div class="footer-center mt-3">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>21 Revolution Street</span> Delhi, India</p>
+                </div>
+                
+                <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 555 123456</p>
+                </div>
+                
+                <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:rams@company.com">contact@rams_bakery.com</a></p>
+                </div>
+        </div>
+        <div class="footer-right mt-3">
+ 
+            <p class="footer-company-about">
+            <span>About the company</span>
+            Ram's bakery provides freshly made cake &amp; many more home made products at reasonable price.
+            </p>
+            
+            <div class="footer-icons">
+            
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            
+            </div>
+            
+            </div>
+    </footer>
+
+</body>
+
+</html>
